@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BowlingGameController">
+   <left>
+      <BorderPane BorderPane.alignment="CENTER">
+         <bottom>
+            <Button fx:id="hitPinsButton" mnemonicParsing="false" onAction="#hitPins" text="hit pins" BorderPane.alignment="CENTER">
+               <graphic>
+                  <TextField fx:id="attemptScore" />
+               </graphic>
+            </Button>
+         </bottom>
+         <center>
+            <ListView fx:id="bowlerListView" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </left>
+   <center>
+      <ListView fx:id="soloGameView" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Bowling">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#startNewGame" text="start new game" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

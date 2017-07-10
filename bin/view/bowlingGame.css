@@ -1,0 +1,20 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.score {
+    -fx-font-size: 24pt;
+}
+
+.currentBowler {
+    -fx-font-size: 24pt;
+}
+.totalLabel {
+    -fx-font-size: 24pt;
+ 	-fx-text-fill: #fff;
+}
+.totalScore {
+    -fx-font-size: 24pt;
+ 	-fx-text-fill: #fff;
+}
+.totalWidget {
+    -fx-background-color: #4682b4;
+ 	-fx-text-fill: #fff;
+}
